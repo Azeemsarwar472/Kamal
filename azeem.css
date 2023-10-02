@@ -1,0 +1,130 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color:rgba(0,0,0,0.5);   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    /*background-color: yellow;*/
+    text-align: center;
+    color: white;
+}
+nav .menu{
+    width: 40%;
+   /* background-color: palevioletred;*/
+    display: flex;
+    justify-content: space-around; 
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+  
+
+}
+/*
+nav .menu a:first-child{
+    color:#00b894;
+}*/
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+section
+{
+text-align: center;    
+}
+
+section h3{
+    font-size: 35px; 
+    font-weight: 200;
+    letter-spacing:2px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    color:#eee;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+  
+}
+section .btnone{
+   /* background-color: #00b894;*/
+   background: #fff;
+   color:#000;
+}
+section .btntwo{
+   background-color: #00b894;
+color: #fff;
+}
+
+.change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content: "infomation Technology"; }
+    10%{content: "Accounts"; }
+    20%{content: "Marketing"; }
+    30%{content: "Purchase"; }
+    40%{content: "Kitchen"; }
+    50%{content: "Garments"; }
+    60%{content: "Finance"; }
+    70%{content: "Stitching"; }
+    80%{content: "Processing"; }
+    90%{content: "Cutting"; }
+    100%{content: "Folding";
+}
+}
+.btnone:hover{
+    background-color: #00b894;
+    color: white;
+}
+.btntwo:hover{
+    background-color:white;
+    color:#000;
+}
